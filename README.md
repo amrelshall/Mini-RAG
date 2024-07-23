@@ -39,3 +39,13 @@ $ cp .env.example .env
 ```
 
 Set your environment variables in the `.env` file. Like `OPENAI_API_KEY` value.
+
+## Run the FastAPI server
+
+```bash
+$ uvicorn main:app --reload --host 0.0.0.0 --port 5000  
+```
+
+--reload: for change any changes immediately with no need to stop the run and run again
+--host 0.0.0.0: to make anyone out of the server try the link 
+--port 5000: for changing the port from 8000 to 5000 if you need 
